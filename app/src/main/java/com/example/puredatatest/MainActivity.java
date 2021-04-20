@@ -151,11 +151,7 @@ public class MainActivity extends Activity implements View.OnTouchListener{
         public void onServiceConnected(ComponentName name, IBinder service) {
             pdService = ((PdService.PdBinder)service).getService();
             initPd();
-            if (recordAudioPermissionGranted()) {
-                startAudio();
-            } else {
-                requestAudioPermission();
-            }
+            startAudio();
 
             for(int i = 1; i<=12; i++){
                 PdBase.sendBang("b"+i);
@@ -241,16 +237,6 @@ public class MainActivity extends Activity implements View.OnTouchListener{
 
     private void stopAudio() {
         pdService.stopAudio();
-    }
-
-    private boolean recordAudioPermissionGranted() {
-        int permissionResult =
-                ContextCompat.checkSelfPermission(this, Manifest.permission.RECORD_AUDIO);
-        return permissionResult == PackageManager.PERMISSION_GRANTED;
-    }
-
-    private void requestAudioPermission() {
-        ActivityCompat.requestPermissions(this, new String[]{Manifest.permission.RECORD_AUDIO}, 0);
     }
 
     @Override
