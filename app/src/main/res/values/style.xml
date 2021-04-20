@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="KeyboardKeyWhite" parent="Widget.AppCompat.Button">
+        <item name="android:background">@android:color/white</item>
+        <item name="android:layout_margin">2dp</item>
+    </style>
+
+    <style name="KeyboardKeyBlack" parent="Widget.AppCompat.Button">
+        <item name="android:background">@android:color/black</item>
+        <item name="android:layout_margin">2dp</item>
+        <item name="layout_constraintWidth_percent">0.08</item>
+    </style>
+</resources>

@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/darker_gray"
+    android:orientation="horizontal">
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/topGuideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.0" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/blackKeysGuideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.47" />
+
+    <!-- White buttons -->
+
+    <Button
+        android:id="@+id/button1"
+        style="@style/KeyboardKeyWhite"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:stateListAnimator="@null"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/button3"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/topGuideline" />
+
+    <Button
+        android:id="@+id/button3"
+        style="@style/KeyboardKeyWhite"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:stateListAnimator="@null"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/button5"
+        app:layout_constraintStart_toEndOf="@id/button1"
+        app:layout_constraintTop_toTopOf="@id/topGuideline" />
+
+    <Button
+        android:id="@+id/button5"
+        style="@style/KeyboardKeyWhite"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:stateListAnimator="@null"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/button6"
+        app:layout_constraintStart_toEndOf="@id/button3"
+        app:layout_constraintTop_toTopOf="@id/topGuideline" />
+
+    <Button
+        android:id="@+id/button6"
+        style="@style/KeyboardKeyWhite"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:stateListAnimator="@null"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/button8"
+        app:layout_constraintStart_toEndOf="@id/button5"
+        app:layout_constraintTop_toTopOf="@id/topGuideline" />
+
+    <Button
+        android:id="@+id/button8"
+        style="@style/KeyboardKeyWhite"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:stateListAnimator="@null"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/button10"
+        app:layout_constraintStart_toEndOf="@id/button6"
+        app:layout_constraintTop_toTopOf="@id/topGuideline" />
+
+    <Button
+        android:id="@+id/button10"
+        style="@style/KeyboardKeyWhite"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:stateListAnimator="@null"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/button12"
+        app:layout_constraintStart_toEndOf="@id/button8"
+        app:layout_constraintTop_toTopOf="@id/topGuideline" />
+
+    <Button
+        android:id="@+id/button12"
+        style="@style/KeyboardKeyWhite"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:stateListAnimator="@null"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/button10"
+        app:layout_constraintTop_toTopOf="@id/topGuideline" />
+
+    <!-- Black buttons -->
+
+    <Button
+        android:id="@+id/button2"
+        style="@style/KeyboardKeyBlack"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:elevation="10dp"
+        android:stateListAnimator="@null"
+        app:layout_constraintBottom_toBottomOf="@id/blackKeysGuideline"
+        app:layout_constraintEnd_toEndOf="@id/button3"
+        app:layout_constraintStart_toStartOf="@id/button1"
+        app:layout_constraintTop_toTopOf="@id/topGuideline" />
+
+    <Button
+        android:id="@+id/button4"
+        style="@style/KeyboardKeyBlack"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:elevation="10dp"
+        android:stateListAnimator="@null"
+        app:layout_constraintBottom_toBottomOf="@id/blackKeysGuideline"
+        app:layout_constraintEnd_toEndOf="@id/button5"
+        app:layout_constraintStart_toStartOf="@id/button3"
+        app:layout_constraintTop_toTopOf="@id/topGuideline" />
+
+    <Button
+        android:id="@+id/button7"
+        style="@style/KeyboardKeyBlack"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:elevation="10dp"
+        android:stateListAnimator="@null"
+        app:layout_constraintBottom_toBottomOf="@id/blackKeysGuideline"
+        app:layout_constraintEnd_toEndOf="@id/button8"
+        app:layout_constraintStart_toStartOf="@id/button6"
+        app:layout_constraintTop_toTopOf="@id/topGuideline" />
+
+    <Button
+        android:id="@+id/button9"
+        style="@style/KeyboardKeyBlack"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:elevation="10dp"
+        android:stateListAnimator="@null"
+        app:layout_constraintBottom_toBottomOf="@id/blackKeysGuideline"
+        app:layout_constraintEnd_toEndOf="@id/button10"
+        app:layout_constraintStart_toStartOf="@id/button8"
+        app:layout_constraintTop_toTopOf="@id/topGuideline" />
+
+    <Button
+        android:id="@+id/button11"
+        style="@style/KeyboardKeyBlack"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:elevation="10dp"
+        android:stateListAnimator="@null"
+        app:layout_constraintBottom_toBottomOf="@id/blackKeysGuideline"
+        app:layout_constraintEnd_toEndOf="@id/button12"
+        app:layout_constraintStart_toStartOf="@id/button10"
+        app:layout_constraintTop_toTopOf="@id/topGuideline" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
